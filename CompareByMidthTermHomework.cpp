@@ -73,17 +73,17 @@ int main()
     minIndex = getIndex(ArrOfMidTerms, min);
     reverse(vec[maxIndex].begin(), vec[maxIndex].end());
     reverse(vec[minIndex].begin(), vec[minIndex].end());
-    cout << "En Buyuk Liste Orta Dugum Adres : " << &vec[maxIndex][(vec[maxIndex].size()/2)] << endl;
+    cout << "Largest List by Midth Term. Midth Term's location is : " << &vec[maxIndex][(vec[maxIndex].size()/2)] << endl;
     tmp = vec[minIndex][(vec[minIndex].size() / 2)];
     vec[minIndex][(vec[minIndex].size() / 2)] = vec[maxIndex][(vec[maxIndex].size() / 2)];
-    cout << "En Buyuk Liste Degerler:" << endl;
+    cout << "Largest List by Midth Term Values:" << endl;
     for (int i = 0; i < vec[minIndex].size(); i++)
     {
         cout << vec[minIndex][i] << " ";
     }
     cout << endl << "------------------------------------------------------------------------" << endl ;
-    cout << "En Kucuk Liste Orta Dugum Adres : " << &vec[minIndex][(vec[minIndex].size() / 2)] << endl;
-    cout << "En Kucuk Liste Degerler:" << endl;
+    cout << "Smallest List by Midth Term. Midth Term's location is : " << &vec[minIndex][(vec[minIndex].size() / 2)] << endl;
+    cout << "Smallest List by Midth Term Values:" << endl;
     vec[maxIndex][(vec[maxIndex].size() / 2)] = tmp;
     for (int i = 0; i < vec[maxIndex].size(); i++)
     {
