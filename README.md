@@ -1,5 +1,5 @@
 # CompareByMidthElement
-A cpp project homework of a 3rd year CS major student.
+A cpp project homework of a 3rd year CS major student. I wanted to challange myself so got this HW from a friend of mine.
 
 ## Description
 - A text file will be read by the program.
